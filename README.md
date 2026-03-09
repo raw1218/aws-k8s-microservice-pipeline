@@ -155,3 +155,14 @@ kubectl rollout restart deployment microservice-deployment
 ```
 
 This forces Kubernetes to pull the updated image.
+
+
+---
+
+# Future Improvements
+
+Possible next steps for this project include:
+
+- **Ingress support** for cleaner HTTP routing instead of relying on `kubectl port-forward` for local testing
+- **Amazon EKS deployment** to move from a local `kind` cluster to a real cloud-hosted Kubernetes environment
+- **Automated deployment pipeline** that updates Kubernetes deployments after a new Docker image is pushed
