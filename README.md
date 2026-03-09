@@ -45,8 +45,6 @@ https://kubernetes.io/docs/tasks/tools/
 ### kind
 https://kind.sigs.k8s.io/
 
-### Git
-https://git-scm.com/
 
 ---
 
@@ -67,7 +65,7 @@ cd aws-k8s-microservice-pipeline
 kind create cluster --config kind-config.yaml
 ```
 
-Verify the cluster:
+Verify the cluster (may have to wait a minute for cluster to initialize):
 
 ```
 kubectl get nodes
