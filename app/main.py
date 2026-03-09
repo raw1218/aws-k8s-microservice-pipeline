@@ -17,3 +17,8 @@ def health():
 @app.get("/time")
 def time():
     return {"time": str(datetime.datetime.now())}
+
+
+@app.get("/version")
+def version():
+    return {"version": "v2"}
