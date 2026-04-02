@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import datetime
+from db_client import DbClient
 
 
 app = FastAPI()
@@ -32,10 +33,16 @@ def log():
     server_ip = "1.1.1.1"
     client_ip = "2.2.2.2"
 
-    db_client = DBClient()
+    db_client = DbClient()
     db_client.insert_request_log(server_ip, f"client_ip = {client_ip}")
     return {"message": "Logged request to database"}
 
+
+@app.get("/read_logs")
+def read_logs():
+    db_client = DbClient()
+    logs = db_client.read_request_logs(5)
+    return {"logs": logs}
     
 
 
