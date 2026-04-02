@@ -166,3 +166,8 @@ Possible next steps for this project include:
 - **Ingress support** for cleaner HTTP routing instead of relying on `kubectl port-forward` for local testing
 - **Amazon EKS deployment** to move from a local `kind` cluster to a real cloud-hosted Kubernetes environment
 - **Automated deployment pipeline** that updates Kubernetes deployments after a new Docker image is pushed
+
+
+
+#Going to expand the application to use postgres. Postgres will be used to store API usage metrics, such as request counts and response times. 
+This will allow us to demonstrate how to integrate a database into a Kubernetes microservice architecture, as well as how to manage stateful applications in Kubernetes.

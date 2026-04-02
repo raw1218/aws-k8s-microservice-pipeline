@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+  - app-config.yaml
+  - app-secret.yaml
+
+replicas:
+  - name: app
+    count: 1
+  - name: postgres
+    count: 1
