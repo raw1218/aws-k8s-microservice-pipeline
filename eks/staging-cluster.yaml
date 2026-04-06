@@ -7,5 +7,5 @@ metadata:
 
 managedNodeGroups:
   - name: ng-staging
-    instanceType: t3.medium
+    instanceType: t3.micro
     desiredCapacity: 1
