@@ -1,7 +1,9 @@
 resources:
   - ../../base
-  - app-config.yaml
-  - app-secret.yaml
+  - app-config_dev.yaml
+  - app-secret_dev.yaml
+  - postgres-service.yaml
+  - postgres-deployment.yaml 
 
 replicas:
   - name: app
