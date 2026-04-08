@@ -7,3 +7,8 @@ aws cloudformation create-stack \
 aws iam create-role \
   --role-name myAmazonEKSClusterRole \
   --assume-role-policy-document file://"eks-cluster-role-trust-policy.json"
+
+
+
+aws eks update-kubeconfig --region us-east-1 --name EKS-Dev-Cluster
+            
