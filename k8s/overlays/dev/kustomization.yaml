@@ -1,6 +1,5 @@
 resources:
   - ../../base
-  - app-config_dev.yaml
   - app-secret_dev.yaml
   - postgres-service.yaml
   - postgres-deployment.yaml 
