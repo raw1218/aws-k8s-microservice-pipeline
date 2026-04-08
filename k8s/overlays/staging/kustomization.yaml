@@ -2,7 +2,10 @@ resources:
   - ../../base
   - app-config-staging.yaml
   - app-secret-staging.yaml
-  - postgres-service.yaml 
+
+
+patchesStrategicMerge:
+  - postgres-service-patch.yaml
 
 replicas:
   - name: app
