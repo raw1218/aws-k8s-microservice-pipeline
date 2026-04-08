@@ -1,7 +1,7 @@
 resources:
   - ../../base
-  - app-config_staging.yaml
-  - app-secret_staging.yaml
+  - app-config-staging.yaml
+  - app-secret-staging.yaml
   - postgres-service.yaml 
 
 replicas:
