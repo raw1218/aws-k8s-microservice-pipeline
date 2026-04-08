@@ -1,5 +1,3 @@
 resources:
   - app-deployment.yaml
   - app-service.yaml
-  - postgres-deployment.yaml
-  - postgres-service.yaml
