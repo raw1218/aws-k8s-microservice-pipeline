@@ -27,7 +27,7 @@ class DbClient:
         port = os.getenv("DATABASE_PORT", "5432")
         user = os.getenv("POSTGRES_USER", "metrics_user")
         password = os.getenv("POSTGRES_PASSWORD", "password")
-        db = os.getenv("POSTGRES_DB", "metrics_db")
+        db = os.getenv("POSTGRES_DB", "postgres")
 
         dsn = f"dbname={db} user={user} password={password} host={host} port={port}"
         logging.info(f"Constructed DSN (host={host}, db={db}, user={user})")

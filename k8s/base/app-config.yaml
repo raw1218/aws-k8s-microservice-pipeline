@@ -5,4 +5,4 @@ metadata:
 data:
   DATABASE_HOST: postgres
   DATABASE_PORT: "5432"
-  POSTGRES_DB: metrics_db
+  POSTGRES_DB: postgres
