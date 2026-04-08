@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+  - app-config_staging.yaml
+  - app-secret_staging.yaml
+  - postgres-service.yaml 
+
+replicas:
+  - name: app
+    count: 2

@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 .vs/
+
+.k8s/overlays/staging/app-secret-staging.yaml
